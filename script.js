@@ -107,3 +107,9 @@ function addBtn() {
 }
 
 btn.addEventListener("click", addBtn);
+
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addBtn();
+  }
+});
